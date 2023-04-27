@@ -6,14 +6,14 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите строку: ");
+//        System.out.print("Введите строку: ");
         doOpeation(in.nextLine());
-//        tests();
+        tests();
     }
 
     private static void doOpeation(String str) {
 
-        Matcher m = Pattern.compile("^([0-9]+) ([+,\\-,*,/]) ([0-9]+)$").matcher(str);
+        Matcher m = Pattern.compile("^([0-9]+) ([+\\-*/]) ([0-9]+)$").matcher(str);
         if (m.find()) {
             int first = Integer.parseInt(m.group(1));
             String arithmeticOperation = m.group(2);
