@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-//        System.out.print("Введите строку: ");
+        System.out.print("Введите строку: ");
         doOpeation(in.nextLine());
-        tests();
+//        tests();
     }
 
     private static void doOpeation(String str) {
