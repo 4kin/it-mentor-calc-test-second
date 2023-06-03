@@ -27,6 +27,7 @@ public class Main {
                 case "-" -> System.out.println(first - second);
                 case "/" -> System.out.println(first / second);
             }
+
         } else {
             throw new RuntimeException("worng");
         }
@@ -52,6 +53,4 @@ public class Main {
             System.out.println("'1+1' не прошло = " + runtimeException.getMessage());
         }
     }
-
-
 }
